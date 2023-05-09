@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://board-pilot.c0vybfmy0srp.ap-northeast-2.rds.amazonaws.com:3306/board-pilot?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false&allowMultiQueries=true&autoreconnect=true
+    username: admin
+    password: Qwer!234
+
+file:
+  upload-path: /data
