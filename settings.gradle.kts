@@ -1,1 +1,1 @@
-rootProject.name = "board-api"
+rootProject.name = "jpa-board-api"
