@@ -3,14 +3,13 @@ package shop.boardpilot.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
-import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
-import shop.boardpilot.exception.ResourceNotFoundException;
 import shop.boardpilot.model.dto.request.BoardRequestDto;
 import shop.boardpilot.model.dto.response.BoardResponseDto;
 import shop.boardpilot.model.entity.BoardEntity;
 import shop.boardpilot.repository.BoardRepository;
 import org.springframework.data.domain.Pageable;
+import site.kongdroid.common.exception.ResourceNotFoundException;
 
 import javax.transaction.Transactional;
 

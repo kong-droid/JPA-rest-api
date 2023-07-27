@@ -1,5 +1,6 @@
 package shop.boardpilot.model.dto.response;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
@@ -16,7 +17,9 @@ public class PostResponseDto {
     private String title;
     private String content;
     private int viewCount;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createdDate;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
     private LocalDateTime updatedDate;
     private List<PostCommentResponseDto> comment;
     private List<AttachmentResponseDto> attachment;
